@@ -33,3 +33,17 @@ www.luv2code.com/spring-boot-props
 
 Spring Security reference manual
 www.luv2code.com/spring-security-refenrece-manual
+
+
+Why we should use bcrypt
+www.luv2code.com/why-bcrypt
+
+Details about the bcrypt algorithm 
+www.luv2code.com/bcrypt-wiki-page
+
+Password hashing best practices 
+www.luv2code.com/password-hashing-best-practices
+
+How to get bcrypt password generated
+www.luv2code.com/generate-bcrypt-password
+
