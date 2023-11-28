@@ -1,0 +1,35 @@
+Spring Boot Actuator End Point
+www.luv2code.com/actuator-endpoints
+www.luv2code.com/actuator-docs
+
+List of Common properties
+www.luv2code.com/spring-boot-props
+
+List of JPA Vendor Implementation
+www.luv2code.com/jpa-vendors 
+
+Spring Boot Reference Guide --> Spring REST
+www.luv2code.com/spring-reference-manual
+
+Use for testing API -> JSON
+https://jsonplaceholder.typicode.com/
+
+
+Full List of methods available --> see the JavaDoc for JpaRepository 
+www.luv2code.com/jpa-repository-javadocs
+
+Advanced features JpaRepository (adding custom JPQL, Query DSL)
+www.luv2code.com/spring-data-jpa-definding-custom-queries
+
+
+Optional Tutorial 
+www.luv2code.com/java-optional-tutorial
+
+
+Spring data REST Config --> application.properties
+www.luv2code.com/spring-boot-props
+
+
+
+Spring Security reference manual
+www.luv2code.com/spring-security-refenrece-manual
