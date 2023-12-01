@@ -21,7 +21,19 @@ public class DemoSecurityConfig {
     // here we use the fun123 password as plain text and we will use the BCryptPasswordEncoder
     @Bean
     public UserDetailsManager userDetailsManager(DataSource dataSource) {
-        return new JdbcUserDetailsManager(dataSource);
+        final JdbcUserDetailsManager jdbcUserDetailsManager = new JdbcUserDetailsManager(dataSource);
+
+        // define query to retrieve a user by username
+        jdbcUserDetailsManager.setUsersByUsernameQuery(
+                "select user_id, pw, active from members where user_id=?"
+        );
+
+        // define query to retrieve the authorities/roles for a username
+        jdbcUserDetailsManager.setAuthoritiesByUsernameQuery(
+                "select user_id, roles from roles where user_id=?"
+        );
+
+        return jdbcUserDetailsManager;
     }
 
     @Bean
