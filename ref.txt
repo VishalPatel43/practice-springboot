@@ -47,3 +47,9 @@ www.luv2code.com/password-hashing-best-practices
 How to get bcrypt password generated
 www.luv2code.com/generate-bcrypt-password
 
+
+View More Template (Thymeleaft, Groovy, Velocity, Freemarker, etc.)
+www.luv2code.com/spring-mvc-views
+
+
+
