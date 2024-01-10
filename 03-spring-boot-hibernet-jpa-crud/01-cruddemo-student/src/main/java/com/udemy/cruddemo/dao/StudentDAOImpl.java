@@ -23,9 +23,9 @@ public class StudentDAOImpl implements StudentDAO {
 
     // define methods for DAO
     @Override
-    @Transactional // id we update the database
+    @Transactional // we update the database
     public void save(Student theStudent) {
-        entityManager.persist(theStudent);
+        entityManager.persist(theStudent); // add the student
     }
 
     @Override
@@ -35,7 +35,7 @@ public class StudentDAOImpl implements StudentDAO {
 
     @Override
     public List<Student> findAll() {
-        // create a query
+        // create a query (default)
 //        TypedQuery<Student> theQuery = entityManager.createQuery("FROM Student", Student.class);
         TypedQuery<Student> theQuery = entityManager.createQuery(
                 "FROM Student ORDER BY lastName", Student.class);
@@ -44,7 +44,7 @@ public class StudentDAOImpl implements StudentDAO {
         return theQuery.getResultList();
     }
 
-    // kind of prepared statement
+    // kind of prepared statement (custom query)
     @Override
     public List<Student> findByLastName(String theLastName) {
         // create a query
@@ -62,7 +62,7 @@ public class StudentDAOImpl implements StudentDAO {
     @Override
     @Transactional
     public void update(Student theStudent) {
-        entityManager.merge(theStudent);
+        entityManager.merge(theStudent); // update the student
     }
 
     @Override

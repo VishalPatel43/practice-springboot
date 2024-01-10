@@ -30,7 +30,6 @@ Spring data REST Config --> application.properties
 www.luv2code.com/spring-boot-props
 
 
-
 Spring Security reference manual
 www.luv2code.com/spring-security-refenrece-manual
 

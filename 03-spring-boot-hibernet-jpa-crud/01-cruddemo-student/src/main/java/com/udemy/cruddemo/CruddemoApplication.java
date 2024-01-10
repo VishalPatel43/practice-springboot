@@ -104,6 +104,14 @@ public class CruddemoApplication {
         System.out.println("\nGetting student with id: " + theId);
         Student myStudent = theStudentDAO.findById(theId);
 
+        // if we want to find the student which exist or ot
+        /*
+        Student myStudent = theStudentDAO.findById(provide the id);
+        if (myStudent == null) {
+            System.out.println("Student id not found - " + theId);
+        }
+        */
+
         // display the retrieved student
         System.out.println("Found the student: " + myStudent);
     }
